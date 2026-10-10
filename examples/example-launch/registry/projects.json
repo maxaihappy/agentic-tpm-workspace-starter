@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "revision": 1,
+  "projects": [
+    {
+      "project_id": "example-launch",
+      "name": "Example Launch",
+      "aliases": [
+        "Help Center Launch"
+      ],
+      "lifecycle": "active",
+      "current_config": "../projects/example-launch/project-config-r0001.json"
+    }
+  ]
+}

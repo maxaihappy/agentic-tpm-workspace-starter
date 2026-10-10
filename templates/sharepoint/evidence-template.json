@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "project_id": "<PROJECT_ID>",
+  "revision": 1,
+  "evidence_id": "<EVIDENCE_ID>",
+  "source_system": null,
+  "source_id": null,
+  "source_url": null,
+  "source_version": null,
+  "event_at": null,
+  "retrieved_at": null,
+  "author_or_participants": [],
+  "classification": null,
+  "claim_type": "observation",
+  "content": null,
+  "content_sha256": null,
+  "coverage": {
+    "scope": null,
+    "complete": false,
+    "gaps": []
+  },
+  "supersedes": []
+}

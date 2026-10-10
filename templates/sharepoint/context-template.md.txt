@@ -1,0 +1,27 @@
+# <Project name> context
+
+Project ID: <PROJECT_ID>
+Revision: 1
+Classification: <APPROVED_CLASSIFICATION>
+Last verified: <TIMESTAMP_OR_UNKNOWN>
+
+## Purpose and scope
+<Business problem, desired outcome, included and excluded work.>
+
+## People and ownership
+<Accountable owner, TPM/operator, stakeholders; mark unconfirmed roles.>
+
+## Plan and commitments
+<Approved baseline, current forecast, actual progress, dependencies and source links.>
+
+## Decisions and risks
+<Confirmed decisions and their evidence; proposals remain proposals.>
+
+## History and handover
+<Original IDs, inherited commitments, corrections and unresolved contradictions.>
+
+## Current attention and next step
+<Smallest useful action, owner if verified, missing evidence.>
+
+## Acceptance and handoff
+<Exit criteria, receiving team, required acceptance and rollback obligations.>

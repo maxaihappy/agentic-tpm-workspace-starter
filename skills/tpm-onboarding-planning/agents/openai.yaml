@@ -1,0 +1,4 @@
+interface:
+  display_name: tpm-onboarding-planning
+  short_description: Onboard projects and preserve plans and baselines.
+  default_prompt: Use $tpm-onboarding-planning to onboard or take over this project.

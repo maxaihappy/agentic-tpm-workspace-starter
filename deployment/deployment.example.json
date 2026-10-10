@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "agent_name": "Agentic TPM",
+  "classification": null,
+  "sharepoint": {
+    "hostname": null,
+    "site_path": null,
+    "drive_id": null,
+    "root_item_id": null,
+    "root_folder_path": "Agentic_TPM"
+  },
+  "confluence": {
+    "base_url": null,
+    "space_key": null,
+    "parent_page_id": null
+  },
+  "jira": {
+    "base_url": null,
+    "project_key": null
+  },
+  "connectors": {
+    "sharepoint": {
+      "configured": false,
+      "connection_verified_at": null,
+      "supported_actions": []
+    },
+    "confluence": {
+      "configured": false,
+      "connection_verified_at": null,
+      "supported_actions": []
+    },
+    "jira": {
+      "configured": false,
+      "connection_verified_at": null,
+      "supported_actions": []
+    },
+    "slack": {
+      "configured": false,
+      "connection_verified_at": null,
+      "supported_actions": []
+    },
+    "outlook_email": {
+      "configured": false,
+      "connection_verified_at": null,
+      "supported_actions": []
+    },
+    "outlook_calendar": {
+      "configured": false,
+      "connection_verified_at": null,
+      "supported_actions": []
+    }
+  },
+  "schedules": [],
+  "hosting": {
+    "installed_version": null,
+    "installed_at": null,
+    "verified_at": null
+  }
+}

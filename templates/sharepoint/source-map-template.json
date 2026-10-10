@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "project_id": "<PROJECT_ID>",
+  "revision": 1,
+  "sources": [],
+  "category_roots": {},
+  "field_ownership": {
+    "execution_status": "configured_tracker",
+    "shared_narrative": "confluence",
+    "agent_metadata": "sharepoint"
+  },
+  "coverage": []
+}

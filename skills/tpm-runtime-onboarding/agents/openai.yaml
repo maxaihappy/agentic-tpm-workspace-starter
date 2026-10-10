@@ -1,0 +1,5 @@
+interface:
+  display_name: tpm-runtime-onboarding
+  short_description: Resolve projects and remember verified user defaults.
+  default_prompt: Use $tpm-runtime-onboarding to resolve the project and resume my
+    request.

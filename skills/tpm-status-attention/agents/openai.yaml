@@ -1,0 +1,4 @@
+interface:
+  display_name: tpm-status-attention
+  short_description: Find project changes, blockers, risks, and decisions.
+  default_prompt: Use $tpm-status-attention to show what needs attention on this project.

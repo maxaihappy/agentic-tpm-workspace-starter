@@ -1,0 +1,28 @@
+state_backend: memory
+memory_state_file: tpm-user-defaults.yaml
+
+trigger_when:
+  task_requires:
+    - resolve or register a project
+    - use a project-specific source, destination, or reporting preference
+  missing_state:
+    - project_identity
+
+required_state:
+  - key: project_identity
+    ask: "Which project should I use? Share its name, ID, or verified project-home link."
+    store_as: recent_verified_project_mappings
+
+optional_state:
+  - key: default_timezone
+    ask: "Which timezone should project reports use by default?"
+    default: project-specific, otherwise authenticated user timezone
+    store_as: default_timezone
+
+completion_requires:
+  - project_identity
+
+skip_when:
+  - the current request provides one unambiguous verified project identity
+  - the task is a generic method question that does not depend on project records
+  - missing optional state does not affect the next useful action

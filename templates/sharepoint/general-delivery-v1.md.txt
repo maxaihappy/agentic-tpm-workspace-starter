@@ -1,0 +1,14 @@
+# General delivery runbook v1
+
+Project ID: <PROJECT_ID>
+Adapt this runbook to the project before live use.
+
+1. Define purpose, scope, owner, intended outcomes and acceptance evidence.
+2. Preserve approved baseline separately from forecasts and proposals.
+3. Track deliverables and dependencies with stable IDs and confirmed owners.
+4. Reconcile scoped evidence; distinguish a question, idea, action and decision.
+5. Produce reports for the intended audience with explicit cutoff and coverage.
+6. Coordinate requested follow-ups and retain verified outcomes.
+7. Assess every exit criterion, receiving-team acceptance and residual obligations before recommending closure.
+
+Project-specific lifecycle, risk thresholds, escalation triggers, retention, classification and acceptance rules must be supplied by the project owner. This generic runbook supplies no production operating authority.

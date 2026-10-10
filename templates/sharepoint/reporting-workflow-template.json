@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "project_id": "<PROJECT_ID>",
+  "revision": 1,
+  "method": "sources-to-registers-to-daily-to-weekly",
+  "timezone": null,
+  "cutoff_local_time": null,
+  "weekly_day": null,
+  "destinations": {},
+  "delivery": {
+    "recipients": [],
+    "method": null
+  },
+  "schedule": {
+    "configured": false,
+    "id": null,
+    "verified_at": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "project_id": "<PROJECT_ID>",
+  "revision": 1,
+  "report_id": "<REPORT_ID>",
+  "report_type": "daily",
+  "report_date": null,
+  "cutoff": null,
+  "timezone": null,
+  "evidence_refs": [],
+  "register_versions": [],
+  "coverage_gaps": [],
+  "destination": null,
+  "published_revision": null,
+  "verified_at": null
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "project_id": "<PROJECT_ID>",
+  "revision": 1,
+  "timezone": null,
+  "audience": [],
+  "report_format": "executive-summary-with-evidence-appendix",
+  "quiet_hours": null,
+  "language": "en",
+  "personal_preferences": []
+}

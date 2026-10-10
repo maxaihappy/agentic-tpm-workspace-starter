@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "project_id": "example-launch",
+  "name": "Example Launch",
+  "revision": 1,
+  "lifecycle": "active",
+  "classification": "Fictional training data",
+  "objective": "Launch a self-service help center for a fictional product team.",
+  "scope": [
+    "Twelve approved help articles",
+    "Search and navigation",
+    "Support-team handoff"
+  ],
+  "non_goals": [
+    "Billing changes",
+    "Identity platform replacement"
+  ],
+  "owner": "Jordan Lee (fictional)",
+  "operator": "Casey Morgan (fictional)",
+  "stakeholders": [],
+  "timezone": "UTC",
+  "runbook": {
+    "id": "general-delivery",
+    "version": "1.0",
+    "ref": "runbook-v1.md.txt"
+  },
+  "closure_criteria": [
+    {
+      "id": "C-01",
+      "description": "All twelve articles reviewed and accepted",
+      "required": true
+    },
+    {
+      "id": "C-02",
+      "description": "Search acceptance evidence verified",
+      "required": true
+    },
+    {
+      "id": "C-03",
+      "description": "Receiving support team explicitly accepts handoff",
+      "required": true
+    }
+  ],
+  "current": {
+    "context": "context-r0001.md.txt",
+    "source_map": "source-map-r0001.json",
+    "preferences": "preferences-r0001.json",
+    "state": "state-r0001.json",
+    "reporting_workflow": "reporting-workflow-r0001.json",
+    "relationship_index": "relationship-index-r0001.json"
+  },
+  "retention": "Fictional fixture only"
+}

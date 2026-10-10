@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "project_id": "<PROJECT_ID>",
+  "revision": 1,
+  "action_id": "<STABLE_ACTION_ID>",
+  "request_reference": null,
+  "subject_user": null,
+  "operation": null,
+  "target": null,
+  "base_revision": null,
+  "payload_sha256": null,
+  "native_controls_observed": [],
+  "status": "prepared",
+  "result_id": null,
+  "result_revision": null,
+  "verified_at": null,
+  "verification_evidence": null,
+  "pending_repairs": []
+}

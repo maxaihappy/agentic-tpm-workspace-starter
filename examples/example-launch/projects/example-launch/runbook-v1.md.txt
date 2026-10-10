@@ -1,0 +1,11 @@
+# Example Launch runbook v1
+
+Project ID: example-launch
+Fictional fixture; no live actions.
+
+Lifecycle: draft → active → closing → closed. Reopening needs a recorded owner decision.
+At risk: a required acceptance dependency threatens the approved milestone. Off plan: the approved milestone is missed. Unknown: evidence cannot establish position.
+
+Closure requires acceptance of all twelve articles, verified search acceptance, explicit receiving-team handoff acceptance, and the owner's closure decision. Missing evidence stays missing. Recommendations cannot waive a criterion.
+
+Preserve October 16 as the approved baseline until an explicit owner decision changes it. Report an unapproved later date as a proposal. Use exact evidence IDs and event/retrieval timestamps. Draft all outputs in the fictional exercise.

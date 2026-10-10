@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "project_id": "example-launch",
+  "revision": 1,
+  "sources": [
+    {
+      "id": "fixture-evidence",
+      "kind": "offline",
+      "ref": "evidence.json",
+      "scope": "Only supplied fictional records"
+    }
+  ],
+  "category_roots": {
+    "project_home": "../../confluence/00-project-home.md",
+    "status_reports": "../../confluence/07-status-report.md",
+    "meeting_minutes": "../../confluence/08-meeting-minutes.md",
+    "slack_updates": "../../confluence/09-slack-updates.md"
+  },
+  "field_ownership": {
+    "execution_status": "fictional tracker",
+    "shared_narrative": "fictional Confluence sample",
+    "agent_metadata": "fixture project configuration"
+  },
+  "coverage": [
+    {
+      "source": "email",
+      "complete": false,
+      "gap": "Email unavailable in fixture"
+    }
+  ]
+}

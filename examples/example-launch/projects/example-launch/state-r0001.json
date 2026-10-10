@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "project_id": "example-launch",
+  "revision": 1,
+  "last_verified_at": null,
+  "delivery_position": "at_risk",
+  "baseline": [
+    {
+      "id": "M-01",
+      "date": "2026-10-16",
+      "evidence": "E-01"
+    }
+  ],
+  "forecast": [
+    {
+      "id": "M-01",
+      "date": "2026-10-20",
+      "status": "proposed",
+      "evidence": "E-01"
+    }
+  ],
+  "actual": [],
+  "open_questions": [
+    {
+      "id": "Q-01",
+      "question": "Has the support team accepted handoff?",
+      "resolver": "Sam Rivera (fictional)",
+      "due_date": null
+    }
+  ],
+  "actions": [
+    {
+      "id": "A-01",
+      "owner": "Avery Patel (fictional)",
+      "due_date": "2026-10-12",
+      "outcome": "Supply search acceptance evidence"
+    }
+  ],
+  "decisions": [],
+  "risks": [],
+  "source_checkpoints": [
+    {
+      "source_id": "fixture-evidence",
+      "covered_through": "2026-10-09T17:00:00Z"
+    },
+    {
+      "source_id": "email",
+      "covered_through": null
+    }
+  ],
+  "pending_repairs": []
+}

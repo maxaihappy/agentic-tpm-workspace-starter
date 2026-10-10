@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "project_id": "example-launch",
+  "revision": 1,
+  "method": "sources-to-registers-to-daily-to-weekly",
+  "timezone": "UTC",
+  "cutoff_local_time": "17:00",
+  "weekly_day": null,
+  "destinations": {},
+  "delivery": {
+    "recipients": [],
+    "method": null
+  },
+  "schedule": {
+    "configured": false,
+    "id": null,
+    "verified_at": null
+  }
+}

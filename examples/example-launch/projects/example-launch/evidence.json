@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "project_id": "example-launch",
+  "revision": 1,
+  "evidence": [
+    {
+      "project_id": "example-launch",
+      "evidence_id": "E-01",
+      "source_system": "meeting record",
+      "source_id": "meeting-01",
+      "source_url": "https://example.invalid/evidence/meeting-01",
+      "source_version": "fixture-1",
+      "event_at": "2026-10-09T15:00:00Z",
+      "retrieved_at": "2026-10-09T17:00:00Z",
+      "classification": "Fictional training data",
+      "claim_type": "observation",
+      "content": "D-01 approved October 16 launch and twelve-article scope. October 20 was discussed as a proposed forecast; no baseline change approved."
+    },
+    {
+      "project_id": "example-launch",
+      "evidence_id": "E-02",
+      "source_system": "tracker",
+      "source_id": "DEMO-102",
+      "source_url": "https://example.invalid/evidence/DEMO-102",
+      "source_version": "fixture-1",
+      "event_at": "2026-10-09T16:30:00Z",
+      "retrieved_at": "2026-10-09T17:00:00Z",
+      "classification": "Fictional training data",
+      "claim_type": "observation",
+      "content": "Search acceptance is Blocked. Avery owns A-01 to supply evidence by October 12."
+    },
+    {
+      "project_id": "example-launch",
+      "evidence_id": "E-03",
+      "source_system": "chat",
+      "source_id": "thread-03",
+      "source_url": "https://example.invalid/evidence/thread-03",
+      "source_version": "fixture-1",
+      "event_at": "2026-10-09T16:45:00Z",
+      "retrieved_at": "2026-10-09T17:00:00Z",
+      "classification": "Fictional training data",
+      "claim_type": "observation",
+      "content": "Search looks done. No test or acceptance artifact attached."
+    },
+    {
+      "project_id": "example-launch",
+      "evidence_id": "E-04",
+      "source_system": "handoff checklist",
+      "source_id": "handoff-01",
+      "source_url": "https://example.invalid/evidence/handoff-01",
+      "source_version": "fixture-1",
+      "event_at": "2026-10-09T16:00:00Z",
+      "retrieved_at": "2026-10-09T17:00:00Z",
+      "classification": "Fictional training data",
+      "claim_type": "observation",
+      "content": "Receiving-team acceptance field is empty. Sam is the resolver for Q-01."
+    },
+    {
+      "project_id": "example-launch",
+      "evidence_id": "E-05",
+      "source_system": "content register",
+      "source_id": "content-01",
+      "source_url": "https://example.invalid/evidence/content-01",
+      "source_version": "fixture-1",
+      "event_at": "2026-10-09T16:20:00Z",
+      "retrieved_at": "2026-10-09T17:00:00Z",
+      "classification": "Fictional training data",
+      "claim_type": "observation",
+      "content": "Eight of twelve articles have reviewer acceptance. Four remain in review."
+    }
+  ]
+}

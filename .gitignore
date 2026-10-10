@@ -1,0 +1,11 @@
+dist/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+!.env.example
+private/
+local/
+*.local.json
+credentials*

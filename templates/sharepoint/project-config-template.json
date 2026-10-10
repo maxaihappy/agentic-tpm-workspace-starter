@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "project_id": "<PROJECT_ID>",
+  "name": "<PROJECT_NAME>",
+  "revision": 1,
+  "lifecycle": "draft",
+  "classification": null,
+  "objective": null,
+  "scope": [],
+  "non_goals": [],
+  "owner": null,
+  "operator": null,
+  "stakeholders": [],
+  "timezone": null,
+  "runbook": {
+    "id": "general-delivery",
+    "version": "1.0",
+    "ref": null
+  },
+  "closure_criteria": [],
+  "current": {
+    "context": null,
+    "source_map": null,
+    "preferences": null,
+    "state": null,
+    "reporting_workflow": null,
+    "relationship_index": null
+  },
+  "retention": null
+}

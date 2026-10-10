@@ -1,0 +1,4 @@
+interface:
+  display_name: tpm-closeout
+  short_description: Assess acceptance evidence and closure readiness.
+  default_prompt: Use $tpm-closeout to assess this project for closure.

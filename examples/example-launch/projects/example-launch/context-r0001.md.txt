@@ -1,0 +1,39 @@
+# Example Launch project context
+
+Project ID: example-launch  
+Schema version: 1.0  
+Revision: 1  
+Classification: Fictional training data  
+Fixture cutoff: 2026-10-09T17:00:00Z
+
+## Purpose and strategy
+
+The fictional product team wants customers to find answers without opening a support request. The project delivers a help center with twelve approved articles, usable navigation, and a receiving-team handoff. The first release focuses on the most common questions. It does not change billing or identity systems.
+
+## People
+
+Jordan Lee is the fictional accountable project owner. Casey Morgan is the fictional TPM. Riley Chen leads content review. Avery Patel owns search acceptance. Sam Rivera represents the receiving support team. These names illustrate roles and are not contacts.
+
+## Baseline and current forecast
+
+The approved launch baseline is October 16, 2026, supported by E-01. A working session discussed October 20 as a possible forecast if search acceptance slips; no owner approved a baseline change. Treat October 20 as a proposal, preserve October 16 as baseline, and ask the accountable owner to resolve the plan impact.
+
+The scope contains twelve articles. Eight have reviewer acceptance evidence; four remain in review. This count describes content only. No verified denominator supports an overall project completion percentage. Search acceptance and support handoff have separate exit criteria.
+
+## Current state
+
+DEMO-101 tracks content review. DEMO-102 tracks search acceptance and is Blocked in the owning tracker as of 16:30 UTC. A 16:45 chat reply says search “looks done,” but provides no acceptance result. This is a conflict to resolve with Avery, not permission to mark the tracker Done. The handoff record lacks explicit receiving-team acceptance.
+
+## Risks and dependencies
+
+Search acceptance is the critical dependency for release readiness. If the remaining acceptance evidence is unavailable by October 12, Jordan needs to decide how to protect the launch outcome. The suggested response is to resolve test ownership and timing before revising any commitment. Do not invent risk acceptance or assign an unconfirmed due time.
+
+## Evidence and coverage
+
+E-01 records the approved scope and baseline. E-02 records the tracker state. E-03 is the conflicting chat reply. E-04 is the handoff checklist. E-05 records content review. Email could not be retrieved in this exercise. Do not state that no relevant email exists. Meeting notes support the forecast discussion; the calendar invitation itself does not establish agreement.
+
+## History and next step
+
+Keep stable work and decision IDs. D-01 approved the initial scope; D-02 is the unresolved forecast proposal. A-01 asks Avery to supply acceptance evidence by October 12; its owner and date are confirmed in this fixture. Q-01 asks whether the support team accepts the handoff and has Sam as resolver, with no agreed due date.
+
+Prepare a source-backed status draft, flag the tracker/chat conflict and missing acceptance, and recommend the next owner decision. Do not publish, send, schedule or close anything in this exercise.

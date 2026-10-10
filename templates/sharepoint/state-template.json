@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "project_id": "<PROJECT_ID>",
+  "revision": 1,
+  "last_verified_at": null,
+  "delivery_position": "unknown",
+  "baseline": [],
+  "forecast": [],
+  "actual": [],
+  "open_questions": [],
+  "actions": [],
+  "decisions": [],
+  "risks": [],
+  "source_checkpoints": [],
+  "pending_repairs": []
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "project_id": "<PROJECT_ID>",
+  "revision": 1,
+  "run_id": "<RUN_ID>",
+  "window_start": null,
+  "window_end": null,
+  "timezone": null,
+  "source_coverage": [],
+  "report_destination": null,
+  "report_verified_at": null,
+  "actions": [],
+  "state": "prepared",
+  "pending_repairs": []
+}

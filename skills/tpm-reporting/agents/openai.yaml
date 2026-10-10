@@ -1,0 +1,4 @@
+interface:
+  display_name: tpm-reporting
+  short_description: Create evidence-backed project reports.
+  default_prompt: Use $tpm-reporting to prepare the requested project report.

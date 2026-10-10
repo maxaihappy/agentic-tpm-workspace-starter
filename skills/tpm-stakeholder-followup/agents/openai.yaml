@@ -1,0 +1,4 @@
+interface:
+  display_name: tpm-stakeholder-followup
+  short_description: Draft and verify careful stakeholder follow-ups.
+  default_prompt: Use $tpm-stakeholder-followup to prepare or execute this follow-up.

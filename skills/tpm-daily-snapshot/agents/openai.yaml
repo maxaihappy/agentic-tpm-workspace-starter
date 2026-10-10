@@ -1,0 +1,4 @@
+interface:
+  display_name: tpm-daily-snapshot
+  short_description: Build verified project snapshots across approved sources
+  default_prompt: Use $tpm-daily-snapshot to create a verified daily project snapshot.
