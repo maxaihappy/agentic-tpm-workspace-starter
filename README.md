@@ -2,7 +2,7 @@
 
 A reusable setup for a Workspace Agent that helps a TPM or project lead onboard projects, reconcile status, prepare reports, coordinate requested follow-ups, and assess closure. Project knowledge stays in durable external records so the agent can be rebuilt without moving the project's history.
 
-**Version:** 0.2.0. **Status:** portable starter, with fictional examples. This repository contains declarative instructions, seven skills, reference files, templates, and local packaging tools. It is not a hosted runtime, one-click deployment service, or claim of production qualification.
+**Version:** 0.2.1. **Status:** portable starter, with fictional examples. This repository contains declarative instructions, seven skills, reference files, templates, and local packaging tools. It is not a hosted runtime, one-click deployment service, or claim of production qualification.
 
 ## Why use a shared Workspace Agent?
 
@@ -30,6 +30,36 @@ The useful dividing line is **shared continuity and accountability**, not how lo
 | Reuse across projects and agent rebuilds | Separate methods, private deployment bindings, and external project records | Another project or replacement agent can reuse the methods without copying private context |
 
 These are design benefits to validate, not exclusive platform capabilities or established production guarantees. Measure total effort including setup, review, correction, and maintenance. More generated reports alone do not demonstrate value. Proactive follow-through and scheduled operation require separate runtime evidence.
+
+## Maturity levels and current position
+
+This is a working model for Agentic TPM, not an official platform rating. Assess each deployed workflow separately: reporting can be mature while follow-up remains draft-only. Levels describe demonstrated independence and reliability, not permission tiers; they never grant access or bypass native controls.
+
+| Level | Role and trigger | What the agent does independently | What demonstrates this level |
+| --- | --- | --- | --- |
+| **1 — Reactive TPM assistant** | A person asks a question or requests a draft | Reads permitted evidence, reconciles updates, identifies attention items, and drafts a response. The person reviews the result and carries out subsequent actions. | Reviewed outputs preserve project identity, source facts, uncertainty, and human decisions. |
+| **2 — Supervised TPM coworker** | A person delegates a concrete assignment | Carries out the defined task through permitted steps, saves progress in external records, verifies any requested writes, and returns exceptions to the person. It can complete an assignment without a prompt for every step. | Actual task runs show fresh-conversation recovery, correct destinations, destination readback, duplicate prevention, and accurate reporting of partial or uncertain outcomes. |
+| **3 — Proactive project operator** | A verified schedule or supported event starts a bounded workflow | Checks for relevant changes, identifies overdue actions or stalled dependencies, prepares next steps, and performs routine actions only where the task and native controls permit them. It brings business decisions and exceptions to a human. | Observed trigger-driven runs show correct evidence coverage, useful alerts, suppression of resolved or duplicate follow-ups, quiet-hour handling, and successful pause and recovery. |
+| **4 — Delegated project operator within an agreed scope** | A human delegates a defined operating objective and constraints | Repeatedly observes, plans routine coordination, acts where permitted, verifies outcomes, and adjusts within the agreed scope across runs. It tracks whether the intended result occurred, rather than stopping after a report or send. | A representative live trial meets agreed quality and effort thresholds, handles missing access, failures and conflicting evidence, and preserves escalation, audit history, human intervention, and recovery. |
+
+**An accountable project owner is a separate human role, not another agent maturity level.** Across all four levels, people retain strategy, scope, commitments, priorities, risk acceptance, sensitive escalation, exceptions, and acceptance of closure. Level 4 means operating a delegated coordination loop; it does not mean independently owning every project decision or doing the delivery team's work.
+
+### Where the current Workspace Agent is
+
+**Current position: a supervised AI TPM coworker in intended role, with reactive assistance as the established current use and Level 2 execution requiring workflow-specific evidence.** The maintainer reports using it mainly for tedious tracking and reporting: gathering updates, reconciling changes, identifying open items, and preparing reports for review. That supports a Level 1 usage description; it is not a formal runtime qualification.
+
+The seven skills, external project records, action verification, and recovery instructions provide the design for Level 2. Confirmed completion of a particular delegated task can establish Level 2 for that workflow, but configuration alone cannot establish it for every capability. This public starter contains no runtime evidence establishing Level 3 or Level 4. It should not be described as running a whole project on its own.
+
+Cloning the repository, installing skills, adding connectors, or selecting a model does not confer a maturity level. Record actual outcomes in a private [validation receipt](templates/validation-receipt.json), with the installed version, workflow, user/source scope, observed results, and remaining gaps.
+
+### Next steps toward proactive operation
+
+1. **Establish Level 2 for one useful workflow.** Choose a daily snapshot or weekly report. Test evidence reconciliation, fresh-conversation recovery, an explicitly requested reversible save with readback, duplicate requests, and partial failures. Record results using the [acceptance scenarios](agent/acceptance-tests.md); measure total human effort including review and correction.
+2. **Pilot Level 3 detection before automated follow-up.** Configure one supported schedule or event for one registered project and verify actual runs. Begin with read-and-draft checks for overdue actions or stalled dependencies. Review whether alerts are accurate, timely, and worth the interruption.
+3. **Extend only the demonstrated action path.** Identify the exact routine task, sources, destination, audience, timing, and stop conditions under the effective native controls. Test stale evidence, recent replies, quiet hours, duplicate suppression, uncertain writes, pause, and recovery before relying on automatic coordination. A maturity label or saved preference is not authorization.
+4. **Consider Level 4 only after Level 3 is reliable.** Agree a narrow operating objective and human decision boundaries. Evaluate the full observe–act–verify–reassess loop over a representative live trial, with quality and effort thresholds agreed in advance. Verify human intervention and recovery; expand scope only after reviewing evidence.
+
+The next development phase targets **Level 3 proactive support after strengthening Level 2 execution**. These are implementation and validation steps, not features enabled by this README or a promise of autonomous project ownership.
 
 ## Data sources: purpose, ownership, and access
 
@@ -71,7 +101,7 @@ python3 scripts/validate.py
 python3 scripts/package.py
 ```
 
-The build writes dist/agentic-tpm-workspace-starter-0.2.0.zip, seven ZIPs in dist/skill-packages, and a SHA-256 manifest. Source files are human-readable and can be installed manually if the creation assistant cannot retrieve GitHub.
+The build writes dist/agentic-tpm-workspace-starter-0.2.1.zip, seven ZIPs in dist/skill-packages, and a SHA-256 manifest. Source files are human-readable and can be installed manually if the creation assistant cannot retrieve GitHub.
 
 ## What is included
 
