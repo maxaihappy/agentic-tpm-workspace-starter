@@ -2,9 +2,61 @@
 
 A reusable setup for a Workspace Agent that helps a TPM or project lead onboard projects, reconcile status, prepare reports, coordinate requested follow-ups, and assess closure. Project knowledge stays in durable external records so the agent can be rebuilt without moving the project's history.
 
-**Version:** 0.1.0. **Status:** portable starter, with fictional examples. This repository contains declarative instructions, seven skills, reference files, templates, and local packaging tools. It is not a hosted runtime, one-click deployment service, or claim of production qualification.
+**Version:** 0.2.0. **Status:** portable starter, with fictional examples. This repository contains declarative instructions, seven skills, reference files, templates, and local packaging tools. It is not a hosted runtime, one-click deployment service, or claim of production qualification.
 
-Intended GitHub home: [maxaihappy/agentic-tpm-workspace-starter](https://github.com/maxaihappy/agentic-tpm-workspace-starter). Verify the repository is available before using that URL in a builder.
+## Why use a shared Workspace Agent?
+
+Agentic TPM packages a repeatable operating process for work that requires multiple people to coordinate against maintained commitments and shared records. Each person keeps their own working context; the agent applies common methods to the same project sources. Human owners retain decisions and accountability.
+
+The useful dividing line is **shared continuity and accountability**, not how long a task lasts. A three-day launch across teams may need this process; a months-long personal investigation may not.
+
+| Work or use case | Suggested working mode | Why |
+| --- | --- | --- |
+| Explore an idea, prototype code, compare approaches, or draft a one-off analysis | Direct Codex or ChatGPT use | Flexible scope with little shared coordination overhead |
+| Maintain personal research, notes, preferences, or role context | Your private ChatGPT Project or Codex setup | Keeps your individual perspective under your control |
+| Run a cross-team launch or recurring delivery review | Workspace Agent with registered project sources | Consistent status, evidence, commitments, and follow-through across stakeholders |
+| Take over an in-flight project or return in a fresh conversation | Workspace Agent | Recovers project context from verified external records |
+| Prepare sponsor, TPM, and engineering views of one program | Workspace Agent | Different emphasis grounded in compatible source facts |
+| Assess handoff or closure | Workspace Agent | Checks acceptance evidence and remaining obligations beyond a Done label |
+
+“Direct” describes the working pattern. It does not imply ChatGPT runs locally, or that Codex cannot support durable shared work. The same skills, connectors, and records can be used directly; the dedicated agent's value is packaging and sharing that setup.
+
+| Intended benefit | What provides it | How to check that it helps |
+| --- | --- | --- |
+| Less repeated project explanation | Registry, source mappings, and verified continuity records | A fresh thread recovers the correct project with little guidance |
+| Consistent project understanding | Common source ownership and reconciliation rules | Two authorized users receive compatible facts for the same source revisions |
+| Repeatable reporting and handoffs | Seven reusable skills and shared templates | Results remain useful when someone other than the author runs them |
+| More reliable follow-through | Destination readback, action identity, and retry reconciliation | Controlled repeat requests do not create duplicate actions |
+| Reuse across projects and agent rebuilds | Separate methods, private deployment bindings, and external project records | Another project or replacement agent can reuse the methods without copying private context |
+
+These are design benefits to validate, not exclusive platform capabilities or established production guarantees. Measure total effort including setup, review, correction, and maintenance. More generated reports alone do not demonstrate value. Proactive follow-through and scheduled operation require separate runtime evidence.
+
+## Data sources: purpose, ownership, and access
+
+| Source | Purpose and owned information | Boundary |
+| --- | --- | --- |
+| Individual ChatGPT Project or Codex setup | Private role context, goals, working notes, experiments, and personal preferences | User-private by design; verify the actual sharing settings. Never copy automatically into shared records |
+| Jira | Authoritative project tracking and execution status: workflow state, assignee, priority, and execution dates | Reports and caches cite Jira; agent delivery-risk assessments remain separate from recorded status |
+| Confluence | Shared human-facing context, plans, evidence links, documented decisions, reports, and history | Distinguish proposals, approved decisions, superseded information, and evidence; it is not a competing tracker |
+| SharePoint | Shared registry, project metadata/configuration, source mappings, runbooks, checkpoints, provenance, and action history | Operational continuity, not personal memory or a second authoritative execution-status store |
+| Slack, email, calendar, and approved meeting records | Supporting evidence and requested stakeholder coordination | A message is not automatically a commitment; a calendar invitation is not proof of a meeting or decision |
+| This GitHub repository | Reusable agent instructions, skills, public templates, and fictional examples | Contains no live project records, private deployment bindings, or deployed-agent state |
+
+Shared means **available to authorized users**, not everyone who can invoke the agent. Verify the effective connector identity and destination audience on each path; an agent must not expand source access. Avoid copying restricted evidence into broader reports or shared caches. Different access rights can legitimately produce different coverage, which must be disclosed without exposing restricted material.
+
+For example: Jira records “Blocked,” a message says “looks done,” and a Confluence report says “on track.” Preserve Jira's recorded status, cite and date the conflicting evidence, and flag the reconciliation needed. Do not silently redefine the status. Likewise, a newer proposed launch date does not replace an approved baseline.
+
+These products are the reference deployment, not employer-specific dependencies. Other trackers, wikis, and record stores can substitute when source ownership, access, identity, revision handling, and write verification are explicitly mapped and retested.
+
+## How personal work and shared project work fit together
+
+1. Keep individual context in your own private ChatGPT Project or Codex setup. A personal workspace can be durable even when the current task is short.
+2. For coordinated project work, invoke the shared agent from a Project thread **if your environment supports that workflow**. Verify which instructions, files, and context actually reach it; invocation does not prove full context transfer.
+3. Supply the registered project identity, your role, the task, relevant preferences, and sharing constraints. If invocation is unavailable, use a direct agent conversation with that explicit context.
+4. The agent resolves shared project configuration in SharePoint, reads Confluence context and Jira tracking, and uses permitted supporting evidence. It tailors the response to you without changing shared facts.
+5. When an experiment becomes an accepted project decision or commitment, deliberately publish the approved content to its owning system and verify the result. Personal opinions and exploratory notes stay private unless explicitly selected for sharing.
+
+An engineering lead might ask for technical dependencies while a TPM asks for delivery exposure. Their views should differ in emphasis, with compatible facts where their permissions and source versions overlap. Private context must not leak through reports, action logs, caches, or another user's response. See the [context and isolation test procedure](docs/personal-project-context.md).
 
 ## Start here
 
@@ -19,7 +71,7 @@ python3 scripts/validate.py
 python3 scripts/package.py
 ```
 
-The build writes dist/agentic-tpm-workspace-starter-0.1.0.zip, seven ZIPs in dist/skill-packages, and a SHA-256 manifest. Source files are human-readable and can be installed manually if the creation assistant cannot retrieve GitHub.
+The build writes dist/agentic-tpm-workspace-starter-0.2.0.zip, seven ZIPs in dist/skill-packages, and a SHA-256 manifest. Source files are human-readable and can be installed manually if the creation assistant cannot retrieve GitHub.
 
 ## What is included
 
@@ -76,7 +128,7 @@ A daily snapshot should lead with current status, due work and the top risk. The
 
 The local validator checks required files, JSON parsing, linked fixture identity, local Markdown links, skill layout, and common accidental private-data patterns. The packaging script validates first and builds deterministic archives with SHA-256 hashes. These checks do not prove hosted reasoning, live permissions, connector behavior, schedule execution, or fault recovery.
 
-Run [acceptance scenarios](agent/acceptance-tests.md) against the actual agent and record outputs. [Personal-project context transfer](docs/personal-project-context.md) must be tested independently. Configure and observe schedules separately; a saved cadence is not a running automation.
+Use the [read-only implementation audit](prompts/audit-workspace-agent.md) to compare an installed agent with this model. Run [acceptance scenarios](agent/acceptance-tests.md) against the actual agent and record outputs. [Personal-project context transfer](docs/personal-project-context.md) must be tested independently. Configure and observe schedules separately; a saved cadence is not a running automation.
 
 ## Maintaining your version
 
