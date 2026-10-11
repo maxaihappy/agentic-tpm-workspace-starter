@@ -1,10 +1,12 @@
-# Agentic TPM Workspace Starter
+# Agentic TPM Starter for ChatGPT Workspace Agents
 
-A reusable setup for a Workspace Agent that helps a TPM or project lead onboard projects, reconcile status, prepare reports, coordinate requested follow-ups, and assess closure. Project knowledge stays in durable external records so the agent can be rebuilt without moving the project's history.
+A reusable setup for a ChatGPT Workspace Agent that helps a TPM or project lead onboard projects, reconcile status, prepare reports, coordinate requested follow-ups, and assess closure. Project knowledge stays in durable external records so the agent can be rebuilt without moving the project's history.
 
-**Version:** 0.2.1. **Status:** portable starter, with fictional examples. This repository contains declarative instructions, seven skills, reference files, templates, and local packaging tools. It is not a hosted runtime, one-click deployment service, or claim of production qualification.
+**Platform:** Agentic TPM in this repository is a ChatGPT Workspace Agent, configured and used in ChatGPT. Codex helps prepare, review, and package the setup files; the hosted agent runs in ChatGPT with its own conversations and configured connections.
 
-## Why use a shared Workspace Agent?
+**Version:** 0.2.2. **Status:** portable starter, with fictional examples. This repository contains declarative instructions, seven skills, reference files, templates, and local packaging tools. It is not a hosted runtime, one-click deployment service, or claim of production qualification.
+
+## Why use a shared ChatGPT Workspace Agent?
 
 Agentic TPM packages a repeatable operating process for work that requires multiple people to coordinate against maintained commitments and shared records. Each person keeps their own working context; the agent applies common methods to the same project sources. Human owners retain decisions and accountability.
 
@@ -14,10 +16,10 @@ The useful dividing line is **shared continuity and accountability**, not how lo
 | --- | --- | --- |
 | Explore an idea, prototype code, compare approaches, or draft a one-off analysis | Direct Codex or ChatGPT use | Flexible scope with little shared coordination overhead |
 | Maintain personal research, notes, preferences, or role context | Your private ChatGPT Project or Codex setup | Keeps your individual perspective under your control |
-| Run a cross-team launch or recurring delivery review | Workspace Agent with registered project sources | Consistent status, evidence, commitments, and follow-through across stakeholders |
-| Take over an in-flight project or return in a fresh conversation | Workspace Agent | Recovers project context from verified external records |
-| Prepare sponsor, TPM, and engineering views of one program | Workspace Agent | Different emphasis grounded in compatible source facts |
-| Assess handoff or closure | Workspace Agent | Checks acceptance evidence and remaining obligations beyond a Done label |
+| Run a cross-team launch or recurring delivery review | ChatGPT Workspace Agent with registered project sources | Consistent status, evidence, commitments, and follow-through across stakeholders |
+| Take over an in-flight project or return in a fresh conversation | ChatGPT Workspace Agent | Recovers project context from verified external records |
+| Prepare sponsor, TPM, and engineering views of one program | ChatGPT Workspace Agent | Different emphasis grounded in compatible source facts |
+| Assess handoff or closure | ChatGPT Workspace Agent | Checks acceptance evidence and remaining obligations beyond a Done label |
 
 “Direct” describes the working pattern. It does not imply ChatGPT runs locally, or that Codex cannot support durable shared work. The same skills, connectors, and records can be used directly; the dedicated agent's value is packaging and sharing that setup.
 
@@ -44,7 +46,7 @@ This is a working model for Agentic TPM, not an official platform rating. Assess
 
 **An accountable project owner is a separate human role, not another agent maturity level.** Across all four levels, people retain strategy, scope, commitments, priorities, risk acceptance, sensitive escalation, exceptions, and acceptance of closure. Level 4 means operating a delegated coordination loop; it does not mean independently owning every project decision or doing the delivery team's work.
 
-### Where the current Workspace Agent is
+### Where the current ChatGPT Workspace Agent is
 
 **Current position: a supervised AI TPM coworker in intended role, with reactive assistance as the established current use and Level 2 execution requiring workflow-specific evidence.** The maintainer reports using it mainly for tedious tracking and reporting: gathering updates, reconciling changes, identifying open items, and preparing reports for review. That supports a Level 1 usage description; it is not a formal runtime qualification.
 
@@ -93,7 +95,7 @@ An engineering lead might ask for technical dependencies while a TPM asks for de
 1. Read [the architecture](docs/architecture.md) and [build/install guide](docs/build-and-install.md).
 2. Inspect the [agent instructions](agent/instructions.md), [operating contract](agent/operating-contract.md), and seven skill directories.
 3. Run the local checks and package builder below. They need Python 3.10+ and only its standard library; no credentials or network access.
-4. Paste the [creation prompt](prompts/create-workspace-agent.md) into your supported Workspace Agent creation assistant. Codex can also prepare the artifacts and guide installation. Supply a tag/commit or the generated archive.
+4. Paste the [creation prompt](prompts/create-workspace-agent.md) into your supported ChatGPT Workspace Agent creation assistant. Codex can also prepare the artifacts and guide installation. Supply a tag/commit or the generated archive.
 5. Connect your own approved sources, then test the [fictional first run](prompts/first-run.md) before onboarding real project data.
 
 ```bash
@@ -101,7 +103,7 @@ python3 scripts/validate.py
 python3 scripts/package.py
 ```
 
-The build writes dist/agentic-tpm-workspace-starter-0.2.1.zip, seven ZIPs in dist/skill-packages, and a SHA-256 manifest. Source files are human-readable and can be installed manually if the creation assistant cannot retrieve GitHub.
+The build writes dist/agentic-tpm-workspace-starter-0.2.2.zip, seven ZIPs in dist/skill-packages, and a SHA-256 manifest. Source files are human-readable and can be installed manually if the creation assistant cannot retrieve GitHub.
 
 ## What is included
 
@@ -136,7 +138,7 @@ A new project gets configuration and a runbook. It does not need a new copy of e
 
 ## Prerequisites and platform boundaries
 
-You need access to a workspace that supports creating/editing the intended agent, plus the apps you choose to connect and source-system permissions for the exact project. This package does not provide those entitlements. User interface labels and connector actions may change; inspect the current surface. [Official Workspace Agent documentation](https://learn.chatgpt.com/workspace-agents) is the product reference; this repository documents a particular setup pattern.
+You need access to a workspace that supports creating/editing the intended agent, plus the apps you choose to connect and source-system permissions for the exact project. This package does not provide those entitlements. User interface labels and connector actions may change; inspect the current surface. [Official ChatGPT Workspace Agent documentation](https://learn.chatgpt.com/workspace-agents) is the product reference; this repository documents a particular setup pattern.
 
 The main deployment uses SharePoint for durable metadata, Confluence for the team-facing project record, Jira for execution fields, and optional Slack/Outlook evidence. Other systems can be mapped deliberately, with ownership and verification contracts retested. See [connector summary](docs/connectors.md).
 

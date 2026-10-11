@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2 — 2026-10-11
+
+Explicitly identify the starter as a ChatGPT Workspace Agent setup throughout the README and clarify Codex's role in preparing the files. Documentation-only update; agent behavior and hosted deployment are unchanged.
+
 ## 0.2.1 — 2026-10-11
 
 Define four workflow maturity levels, distinguish demonstrated current assistance from the supervised-coworker design, and add evidence-based next steps toward proactive and delegated operation. Keep accountable project ownership human and maturity labels separate from authorization. Documentation-only update; no hosted behavior or deployment changes.
